@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+    sqlserver:
+        image: microsoft/mssql-server-linux:2017-latest
+        command: /bin/bash ./entrypoint.sh
+        environment:
+            ACCEPT_EULA: Y
+            SA_PASSWORD: Password1
+            MSSQL_MEMORY_LIMIT_MB: 4096
+        ports:
+          - 1433:1433
+        volumes:
+            - ./backup:/var/opt/mssql/backup
+            - ./scripts/entrypoint.sh:/entrypoint.sh
+            - ./scripts/db-init.sh:/db-init.sh
+            - ./scripts/db-init.sql:/db-init.sql

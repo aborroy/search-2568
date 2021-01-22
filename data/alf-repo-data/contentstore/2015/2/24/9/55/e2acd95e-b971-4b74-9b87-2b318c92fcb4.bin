@@ -1,0 +1,26 @@
+#
+# Alfresco version information
+#
+
+# Version label
+
+version.major=4
+version.minor=2
+version.revision=2
+version.label=
+
+# Edition label
+
+version.edition=Enterprise
+
+# SCM Revision number
+
+version.scmrevision=https://svn.alfresco.com/repos/alfresco-enterprise/alfresco/PATCHES/V4.2.2/root-r70245
+
+# Build number
+
+version.build=r70245-b51
+
+# Schema number
+
+version.schema=6056
